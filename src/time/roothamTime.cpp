@@ -1,4 +1,4 @@
-#include "rootham_time.h"
+#include "roothamTime.h"
 
 // NTP settings
 const char *ntpServer = "pool.ntp.org";

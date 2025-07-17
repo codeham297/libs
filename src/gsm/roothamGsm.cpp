@@ -1,4 +1,4 @@
-#include "rootham_gsm.h"
+#include "roothamGsm.h"
 #include <Arduino.h>
 
 // Initialize with Serial2

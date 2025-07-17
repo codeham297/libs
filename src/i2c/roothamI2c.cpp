@@ -1,4 +1,4 @@
-#include "rootham_i2c.h"
+#include "roothamI2c.h"
 
 String received_message = ""; // Global variable to store received message
 String message = "";

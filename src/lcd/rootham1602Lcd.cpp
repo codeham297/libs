@@ -1,4 +1,4 @@
-#include "rootham_1602_lcd.h"
+#include "rootham1602lcd.h"
 
 // Define LCD address and size
 LiquidCrystal_I2C lcd(0x27, 16, 2);
