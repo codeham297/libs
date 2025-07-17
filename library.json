@@ -35,7 +35,7 @@
         "dfplayer": {
             "description": "Simplified DFPlayer Mini MP3 interface",
             "dependencies": {
-                "dfrobot/DFRobotDFPlayerMini": "^1.0.5"
+                "dfrobot/DFRobotDFPlayerMini": "^1.0.6"
             },
             "export": {
                 "include": [
