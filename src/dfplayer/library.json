@@ -13,18 +13,18 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/rootham-audio-libs"
+        "url": "https://github.com/codeham297/libs"
     },
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your@email.com",
+            "name": "Hamis Ally Salum",
+            "email": "hamisisalum297@gmail.com",
             "maintainer": true,
             "url": "https://github.com/codeham297"
         }
     ],
     "license": "MIT",
-    "homepage": "https://github.com/yourusername/rootham-audio-libs",
+    "homepage": "https://github.com/codeham297/libs",
     "frameworks": [
         "arduino"
     ],
@@ -38,7 +38,7 @@
     },
     "export": {
         "include": [
-            "src/*",
+            "src/dfplayer/*",
             "include/*"
         ],
         "exclude": [
@@ -52,7 +52,7 @@
             "-Wall",
             "-Wextra"
         ],
-        "srcDir": "src",
+        "srcDir": "src/dfplayer",
         "includeDir": "include"
     }
 }
