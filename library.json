@@ -1,0 +1,146 @@
+{
+    "name": "rootham-libs",
+    "version": "1.0.0",
+    "description": "Rootham's collection of simplified hardware interface libraries",
+    "keywords": [
+        "arduino",
+        "esp32",
+        "esp8266",
+        "embedded",
+        "iot"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/codeham297/rootham-libs"
+    },
+    "authors": [
+        {
+            "name": "Hamis Ally Salum",
+            "email": "hamisisalum297@gmail.com",
+            "maintainer": true,
+            "url": "https://github.com/codeham297"
+        }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/codeham297/rootham-libs",
+    "frameworks": [
+        "arduino"
+    ],
+    "platforms": [
+        "espressif32",
+        "espressif8266",
+        "atmelavr"
+    ],
+    "components": {
+        "dfplayer": {
+            "description": "Simplified DFPlayer Mini MP3 interface",
+            "dependencies": {
+                "dfrobot/DFRobotDFPlayerMini": "^1.0.5"
+            },
+            "export": {
+                "include": [
+                    "src/dfplayer/*",
+                    "include/roothamDfplayer.h"
+                ]
+            }
+        },
+        "espcam": {
+            "description": "ESP32-CAM simplified interface",
+            "dependencies": {
+                "espressif/esp32-camera": "^2.0.0"
+            },
+            "export": {
+                "include": [
+                    "src/espcam/*",
+                    "include/roothamEspcam.h"
+                ]
+            }
+        },
+        "espnow": {
+            "description": "Simplified ESP-NOW communication",
+            "dependencies": {
+                "espressif/arduino-esp32": "^2.0.0"
+            },
+            "export": {
+                "include": [
+                    "src/espnow/*",
+                    "include/roothamEspnow.h"
+                ]
+            }
+        },
+        "gsm": {
+            "description": "GSM module simplified interface",
+            "dependencies": {
+                "vshymanskyy/TinyGSM": "^0.11.5"
+            },
+            "export": {
+                "include": [
+                    "src/gsm/*",
+                    "include/roothamGsm.h"
+                ]
+            }
+        },
+        "i2c": {
+            "description": "Simplified I2C device manager",
+            "export": {
+                "include": [
+                    "src/i2c/*",
+                    "include/roothamI2c.h"
+                ]
+            }
+        },
+        "lcd": {
+            "description": "Unified LCD display interface",
+            "dependencies": {
+                "adafruit/Adafruit-GFX-Library": "^1.10.12"
+            },
+            "export": {
+                "include": [
+                    "src/lcd/*",
+                    "include/roothamLcd.h"
+                ]
+            }
+        },
+        "ota": {
+            "description": "Simplified OTA updates",
+            "export": {
+                "include": [
+                    "src/ota/*",
+                    "include/roothamOta.h"
+                ]
+            }
+        },
+        "time": {
+            "description": "Time management utilities",
+            "dependencies": {
+                "paulstoffregen/Time": "^1.6.1"
+            },
+            "export": {
+                "include": [
+                    "src/time/*",
+                    "include/roothamTime.h"
+                ]
+            }
+        },
+        "wifi": {
+            "description": "Robust WiFi connection manager",
+            "dependencies": {
+                "espressif/arduino-esp32": "^2.0.0"
+            },
+            "export": {
+                "include": [
+                    "src/wifi/*",
+                    "include/roothamWifi.h"
+                ]
+            }
+        }
+    },
+    "build": {
+        "flags": [
+            "-Wall",
+            "-Wextra"
+        ],
+        "srcDir": "src",
+        "includeDir": "include"
+    }
+}

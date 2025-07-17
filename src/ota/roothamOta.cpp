@@ -1,5 +1,5 @@
-#include "rootham_ota.h"
-#include "rootham_wifi.h"
+#include "roothamOta.h"
+#include "roothamWifi.h"
 
 WebServer server(80);
 
