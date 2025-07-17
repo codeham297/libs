@@ -1,4 +1,4 @@
-#include "rootham_esp32_image_collection_server.h"
+#include "roothamImageCollectionServer.h"
 
 void initImageCollectionServer(void *param)
 {

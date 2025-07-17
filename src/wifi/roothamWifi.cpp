@@ -3,7 +3,7 @@
 bool initWiFi()
 {
     WiFi.mode(WIFI_STA);
-    WiFi.begin(wifiSSID, wifiPassword);
+    WiFi.begin(SSID, PASS);
 
     unsigned long startTime = millis();
     while (WiFi.status() != WL_CONNECTED && millis() - startTime < 15000)
